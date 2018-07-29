@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> 
+	<link rel="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/node/node_modules/popper.js/dist/popper.min.js"></script>
+
+</head>
+<body style="background-image:url(images/dress_background.jpg)">
+
+	<div class="form-control-sm m-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4 pt-3 text-center table-bordered  bg-white">
+				<h1>Login Form</h1>
+
+					<div class="form-group form  m-5"><a class="btn-lg btn-primary  p-3 btn-block" 
+						href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Ffind-friends%2Fbrowser%2F%3Frpix%3D1" target="blank" role="button">
+						 Login With facebook </a>
+					</div>
+					<div class="form-group m-5">
+							<a class="btn-lg btn-danger  p-3 btn-block" href="https://accounts.google.com/signin/v2/sl/pwd?flowName=GlifWebSignIn&flowEntry=ServiceLogin" target="blank"  role="button">Login With Google+ </a>
+					</div>
+							<p class="m-5 rounded-circle"> Or</p>
+					<div class="form-group m-5">
+							<button class="btn-lg btn-block p-3 btn-info" id="myBtn"  role="button">Register with Email </button>
+					</div>
+
+					<div class="form-group  m-5 ">
+						<p>By signing I agree to the <a href="#">Terms and Conditions</a></p>
+								<p>Already had an Account?  <button  class="text-white p-2 bg-success ">Sign In
+								</button></p>
+					</div>
+			</div>
+			<div class="col-md-4"></div>
+
+		</div>
+	</div>
+	</div>
+
+<!--Modal Form -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+          	<div class="form-group">
+              <label for="frstname"><span class="glyphicon glyphicon-user"></span> Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Enter Name">
+            </div>
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Username</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Remember me</label>
+            </div>
+              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Login In</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Not a member? <a href="#">Sign Up</a></p>
+          <p>Forgot <a href="#">Password?</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+
+<script>
+$(document).ready(function(){
+    $("#myBtn").click(function(){
+        $("#myModal").modal();
+    });
+});
+</script>
+</body>
+</html>
