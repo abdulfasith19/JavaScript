@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> 
+	<link rel="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/node/node_modules/popper.js/dist/popper.min.js"></script>
+
+</head>
+<body>
+	<p> CLick this button to get largest value using Math.max and its total value </p>
+
+	<button class="center-block" onclick="myFunction()">Try it</button>
+
+<p class="text-center" id="demo">
+	(5, 10)<br>
+    (0, 150, 30, 20, 38)<br>
+    (-5, 10)<br>
+    (-5, -10)<br>
+    (1.5, 2.5)<br>
+</p>
+<p class="text-center" id="demo1"></p>
+
+<script>
+function myFunction() {
+    var a = Math.max(5, 10);
+    var b = Math.max(0, 150, 30, 20, 38);
+    var c = Math.max(-5, 10);
+    var d = Math.max(-5, -10);
+    var e = Math.max(1.5, 2.5);
+
+    var x = a + "<br>" + b + "<br>" + c + "<br>" + d + "<br>" + e;
+    y= a+b+c+d+e;
+    document.getElementById("demo").innerHTML = x;
+    document.getElementById("demo1").innerHTML = y;
+    console.log(y);
+    console.log(x);
+}
+</script>
+</body>
+</html>
