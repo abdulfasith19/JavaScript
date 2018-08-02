@@ -1,0 +1,27 @@
+<html>
+<head>
+<script>
+function fun()
+{
+var n=prompt("Enter The value", "0");
+var c=0;
+for(i=1;i<=n;i++)
+{
+if(n%i==0)
+c++;
+}
+if(c==2)
+{
+document.write("This is prime value");
+}
+else
+{
+document.write("This is not prime value");
+}
+}
+</script>
+<body>
+<input type="button" value=Check_Prime onclick=fun()>
+</body>
+</head>
+</html>
