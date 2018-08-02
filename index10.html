@@ -1,0 +1,46 @@
+<html>
+<head>
+	<script>
+		function add()
+		{
+			var a = parseInt(document.getElementById("t1").value);
+			var b = parseInt(document.getElementById("t2").value);
+			document.getElementById("t3").innerHTML = a+b;			
+		}
+		function sub()
+		{
+			var a = parseInt(document.getElementById("t1").value);
+			var b = parseInt(document.getElementById("t2").value);
+			document.getElementById("t3").innerHTML = a-b;			
+		}
+		function mul()
+		{
+			var a = parseInt(document.getElementById("t1").value);
+			var b = parseInt(document.getElementById("t2").value);
+			document.getElementById("t3").innerHTML = a*b;			
+		}
+		function div()
+		{
+			var a = parseInt(document.getElementById("t1").value);
+			var b = parseInt(document.getElementById("t2").value);
+			document.getElementById("t3").innerHTML = a/b;			
+		}
+		function mod()
+		{
+			var a = parseInt(document.getElementById("t1").value);
+			var b = parseInt(document.getElementById("t2").value);
+			document.getElementById("t3").innerHTML = a%b;			
+		}		
+	</script>
+</head>
+<body>
+	<input type=text id=t1 >  <input type=text id=t2> 
+<br>
+	<div id =t3> </div>
+	<input type=button Value="Add" onclick=add()>
+	<input type=button Value="Sub" onclick=sub()>
+	<input type=button Value="Mul" onclick=mul()>
+	<input type=button Value="Div" onclick=div()>
+	<input type=button Value="Mod" onclick=mod()>
+	</body>
+</html>
