@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css"> 
+	<link rel="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
+  <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/node/node_modules/popper.js/dist/popper.min.js"></script>
+
+</head>
+<body>
+<p id="demo"></p>
+<p id="demo1"></p>
+
+<script>
+var rows=5; 
+for(var i=1;i<=rows;i++)
+{
+for(var j=1;j<=i;j++)
+{
+document.getElementById("demo").innerHTML  = " * ";
+
+}
+document.getElementById("demo").innerHTML="<br/>";
+}
+
+for(var i=1; i<=rows; i++)
+{
+for(var k=1; k<=( rows-i ); k++)
+{
+document.getElementById("demo1").innerHTML  = " ";
+}
+for(var j=1; j<=i; j++)
+{
+document.getElementById("demo1").innerHTML ="* ";
+}
+document.getElementById("demo1").innerHTML "<br/>";
+}
+
+</script>
+
+</body>
+</html>
