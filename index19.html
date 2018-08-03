@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+function val()
+{
+	mid = (document.getElementById("t1").value).trim();
+	
+	at = mid.indexOf("@");
+	dot = mid.lastIndexOf(".");
+	
+	if(at < 1 || dot < at+2 || dot+2 >= mid.length)
+		res = "Invalid Email ID";
+	else
+		res ="";
+	document.getElementById("sp").innerText = res;
+}
+
+function clr()
+{
+	document.getElementById("sp").innerText = "";
+}
+</script>
+</head>
+<body>
+Enter a Email <input type=text onblur=val() onfocus=clr() id=t1> 
+<span id="sp" style="background-color:yellow;color:red;"></span>
+
+</body>
+</html>
