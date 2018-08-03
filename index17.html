@@ -1,0 +1,21 @@
+<html>
+<head>
+<script>
+function alt(x)
+{
+	document.getElementById("amt").value = x;
+}
+
+</script>
+</head>
+<body>
+<select onchange=alt(this.value)>
+	<option value="0.00"> Select a Product </option>
+	<option value="5.00"> Idly </option>
+	<option value="10.00"> Dosai </option>
+	<option value="15.00"> Pongal </option>
+	<option value="20.00"> Poori </option>
+</select>
+<input type=text id=amt>
+</body>
+</html>
