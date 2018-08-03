@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+function on(x)
+{
+document.getElementById(x).src = "home_off.png";
+}
+function off(x)
+{
+document.getElementById(x).src = "home_on.png";
+}
+</script>
+</head>
+<body>
+<div style="width:170px;height:38px; border:1px ridge black;font-size:40px;" onmouseover=on('im') onmouseout=off('im') >
+<img src="home_on.png" id="im" style="height:100%"> Home
+</div>
+</body>
+</html>
