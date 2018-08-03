@@ -1,0 +1,26 @@
+
+
+
+<html>
+<head>
+<script>
+function check()
+{
+	var p1 = document.getElementById("pass1").value;
+	var p2 = document.getElementById("pass2").value; 
+	var name = document.getElementById("uname").value;
+	if(p1 == p2)
+		document.write("<h1> Congratulations "+name+" !!!<br> You have Logged In...</h1>");
+	else
+		document.write("Invalid Input<br> <a href='p34_password.html'>Login</a>");
+}
+
+</script>
+</head>
+<body>
+UserName: <input type=text id=uname><br>
+Password: <input type=password id="pass1"><br>
+Confirm : <input type=password id="pass2"><br>
+<input type=button value="Check" onclick="check()">
+</body>
+</html>
