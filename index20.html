@@ -1,0 +1,31 @@
+<html>
+<style>
+td
+{
+	border: 1px solid black;
+	padding: 10px;
+}
+</style>
+<script>
+function add()
+{
+	var new_row = document.createElement("tr");
+	for(i=0;i<5;i++)
+	new_row.appendChild(add_td());
+	
+	document.getElementById("con_div").appendChild(new_row);	
+}
+
+function add_td()
+{
+	var td = document.createElement("td");	
+	var data = document.createTextNode("Hello");
+	td.appendChild(data);
+	return td;
+}
+</script>
+<body>
+	<input type=button value="Add More" onClick=add()>
+	<div id="con_div"><table></table></div>
+</body>
+</html>
