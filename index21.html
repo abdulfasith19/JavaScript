@@ -1,0 +1,49 @@
+<html>
+<script>
+function sel_all()
+{	
+	cbox = document.getElementsByClassName("c1");
+	for(i=0; i < cbox.length; i++)
+		cbox[i].checked = true;
+
+}
+
+function desel_all()
+{	
+	cbox = document.getElementsByClassName("c1");
+	for(i=0; i < cbox.length; i++)
+		cbox[i].checked = false;
+
+}
+
+function del()
+{
+	cbox = document.getElementsByClassName("c1");
+	for (i=0; i<cbox.length; i++)
+	{	
+		if(cbox[i].checked = true)
+		{	
+			d_row = cbox[i].parentNode.parentNode;
+			d_row.parentNode.removeChild(d_row);
+		}
+	}
+}
+
+
+</script>
+<body>
+
+<h3> Select the preferred city to work </h3>
+<input type=button value="Select All" onclick="sel_all()"> <input type=button value="Deselect All" onclick="desel_all()">
+<input type=button value="Delete"  onclick=del()>
+<br><br>
+
+
+<input type=checkbox class=c1 > Chennai<br>
+<input type=checkbox class=c1 > Bangalore<br>
+<input type=checkbox class=c1 > Hyderabad<br>
+<input type=checkbox class=c1 > Trivandrum<br>
+
+
+</body>
+</html>

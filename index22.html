@@ -1,0 +1,21 @@
+<html>
+<script>
+function set(x)
+{
+	document.getElementById("a1").href = "http://www."+x;
+	
+	document.getElementById("btn1").value = " Go Now ";
+	document.getElementById("btn1").disabled = false;
+}
+
+</script>
+<body>
+	<input type=radio name=site value="google.com" onclick=set(this.value)> Google<br>
+	<input type=radio name=site value="yahoo.com" onclick=set(this.value)> Yahoo<br>
+	<input type=radio name=site value="ritinfotech.com" onclick=set(this.value)> RIT Infotech <br>
+	<input type=radio name=site value="ritinfojobs.com" onclick=set(this.value)> RIT Infojobs <br>
+	
+	<a id="a1" href=""> <input id="btn1" type=button value=" Choose an Option " disabled> </a>
+
+</body>
+</html>
