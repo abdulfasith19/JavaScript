@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p>Pussh Methods add new element</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+<script>
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits;
+
+function myFunction() {
+    fruits.push("pineapple");
+    document.getElementById("demo").innerHTML = fruits;
+    document.getElementById("demo1").innerHTML = fruits.length;
+    fruits.push("Lemon");
+    document.getElementById("demo2").innerHTML = fruits;
+    document.getElementById("demo3").innerHTML = fruits.length;
+}
+</script>
+
+</body>
+</html>
