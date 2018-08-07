@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+    var x = document.forms["myForm"].value;
+    if (x == "") {
+        alert("Name must be filled out");
+        return false;
+    }
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action="/action_page.php"
+onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname"><br><br>
+Name: <input type="password" name="fname"><br><br>
+Gender: <input type="radio" name="gender" value="male">
+		<input type="radio" name="gender"><br><br>
+Qualification: <input type="checkbox" name="degree">'<br><br>
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
