@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title> GK Quiz</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<form name="Myform">
+		Q1. HTML stands for?<br/>
+		<input type="radio" name="q1" value="a">Hypertension markup language<br/>
+		<input type="radio" name="q1" value="b">Hypertext markup language<br/>
+		<br>
+         
+		Q2. What's the advantage for Application cache?<br/>
+		<input type="radio" name="q2" value="a">Offline browsing<br/>
+		<input type="radio" name="q2" value="b"> Spent less time filling in forms<br/>
+		<br>
+
+		Q3. What is the correct HTML for adding a background color?<br/>
+		<input type="radio" name="q3" value="a"> < body style="background-color:yellow;"> <br/>
+		<input type="radio" name="q3" value="b">  < background>yellow /background><br/>
+         <br>
+
+		Q4. What is Web workers for?<br/>
+		<input type="radio" name="q4" value="a"> It's a new page that runs in the background independently of other pages. <br/>
+		<input type="radio" name="q4" value="b"> It's a JavaScript that runs in the background<br/>
+		<br>
+
+		Q5. Which of the following is correct about data-title Data attribute of Tooltip Plugin?<br/>
+		<input type="radio" name="q5" value="a">Sets the default title value if the title attribute isn't present<br/>
+		<input type="radio" name="q5" value="b">
+		data-title − Sets the default title value if the title attribute isn't present<br/>
+		<br>
+
+		Q6. Which of the following is correct about Bootstrap jumbotron?<br/>
+		<input type="radio" name="q9" value="a">To use the Jumbotron: Create a container < div> with the class of .jumbotron<br/>
+		<input type="radio" name="q9" value="b">This component can optionally increase the size of headings and add a lot of margin for landing page content<br/>
+		<input type="radio" name="q9" value="c">Both of them<br/>
+        <br>
+		
+
+		Q7. Which of the following bootstrap style of button makes the button size small?<br/>
+		<input type="radio" name="q10" value="a">btn-lg<br/>
+		<input type="radio" name="q10" value="b">btn-sm<br/>
+	    <br>
+
+		Q8. Which of the following bootstrap style of button provides extra visual weight and identifies the primary action in a set of buttons?<br/>
+		<input type="radio" name="q8" value="a">btn-success<br/>
+		<input type="radio" name="q8" value="b">btn-primary<br/>
+		<br>
+
+		Q9.Which of the following is correct about Bootstrap Media Query ?<br/>
+		<input type="radio" name="q6" value="a">Media Queries in Bootstrap allow you to move, show and hide content based on the viewport size<br/>
+		<input type="radio" name="q6" value="b">Media queries have two parts, a device specification and then a size rule<br/>
+		<input type="radio" name="q6" value="c">both of the above<br/>
+        <br>
+
+
+		Q10. Which of the following bootstrap styles are used to create a vertical pills navigation?<br/>
+		<input type="radio" name="q7" value="a">nav.nav-pills<br/>
+		<input type="radio" name="q7" value="b">nav,nav-tab,nav-justify<br/>
+		<br>
+		
+    
+    <input type="button" value="submit" onclick="check()">
+  </div>
+</form>
+<script>
+	 function check() {
+	 	var q1=document.Myform.q1.value;
+	 	var q2=document.Myform.q2.value;
+	 	var q3=document.Myform.q3.value;
+	 	var q4=document.Myform.q4.value;
+	 	var q5=document.Myform.q5.value;
+	 	var q6=document.Myform.q6.value;
+	 	var q7=document.Myform.q7.value;
+	 	var q8=document.Myform.q8.value;
+        var q9=document.Myform.q9.value;
+        var q10=document.Myform.q10.value;
+        var count=0;
+        if(q1=="b"){
+        	count++;
+        }if(q2=="a"){
+        	count++;
+        }if(q3=="a"){
+        	count++;
+        }if(q4=="b"){
+        	count++;
+        }if(q5=="b"){
+        	count++;
+        }if(q6=="c"){
+        	count++;
+        }if(q7=="b"){
+        	count++;
+        }if(q8=="b"){
+        	count++;
+        }if(q9=="c"){
+        	count++;
+        }if(q10=="b"){
+        	count++;
+        }
+        alert("You got " +count+" marks");  
+ }
+</script>
+
+</body>
+</html>
